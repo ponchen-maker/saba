@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SABA 体育主播 — 让平台从工具进化为社群</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
   :root {
     --purple: #A855F7;
@@ -38,7 +39,7 @@
     padding: 18px 60px;
     background: rgba(8, 12, 20, 0.85);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid rgba(245, 197, 24, 0.15);
+    border-bottom: 1px solid rgba(168,85,247,0.15);
   }
   .nav-logo {
     font-size: 22px; font-weight: 800; letter-spacing: 2px;
@@ -129,7 +130,7 @@
     animation: bounce 2s infinite;
   }
   .scroll-hint::after {
-    content: '▼'; font-size: 18px; color: var(--purple);
+    content: '\f078'; font-family: "Font Awesome 6 Free"; font-weight: 900; font-size: 14px; color: var(--purple);
   }
   @keyframes bounce {
     0%, 100% { transform: translateX(-50%) translateY(0); }
@@ -333,7 +334,15 @@
     transition: all 0.25s;
   }
   .lang-card:hover { border-color: var(--blue); transform: translateY(-4px); }
+
+  .flag-text {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 64px; height: 64px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+    color: #fff; font-size: 18px; font-weight: 900; letter-spacing: 1px;
+  }
   .lang-flag { font-size: 48px; margin-bottom: 16px; }
+
   .lang-name { font-size: 20px; font-weight: 700; margin-bottom: 4px; }
   .lang-price { font-size: 14px; color: var(--text-muted); }
   .lang-price strong { color: var(--purple); font-size: 20px; }
@@ -398,7 +407,7 @@
     font-size: 14px; color: var(--text-muted); padding: 10px 0;
     border-bottom: 1px solid rgba(255,255,255,0.04);
   }
-  .price-features li::before { content: '✓'; color: var(--blue); font-weight: 700; flex-shrink: 0; }
+  .price-features li::before { content: '\f00c'; font-family: 'Font Awesome 6 Free'; font-weight: 900; color: var(--blue); flex-shrink: 0; }
   .price-cta {
     display: block; margin-top: 32px; padding: 14px;
     background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
@@ -495,7 +504,7 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-grid"></div>
-  <div class="hero-tag">🎙 体育直播主播解决方案</div>
+  <div class="hero-tag"><i class="fa-solid fa-microphone"></i> 体育直播主播解决方案</div>
   <h1 class="hero-title">
     <div class="line1">高价值玩家追求的</div>
     <div class="line2">是陪伴感与情绪价值</div>
@@ -618,7 +627,7 @@
 
     <div class="features-grid">
       <div class="feature-card">
-        <div class="feature-icon gold">🎙</div>
+        <div class="feature-icon gold"><i class="fa-solid fa-microphone"></i></div>
         <div class="feature-title">专业体育主播</div>
         <div class="feature-desc">主播不只是聊天，还看得懂球、能即时提供建议，让玩家感受到专业陪伴的价值。真人主播带来不可替代的情绪感染力。</div>
         <div class="feature-tags">
@@ -627,7 +636,7 @@
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon green">🤖</div>
+        <div class="feature-icon green"><i class="fa-solid fa-robot"></i></div>
         <div class="feature-title">AI 智能后台系统</div>
         <div class="feature-desc">AI 智能对话系统 + AI 风险控管系统，结合真人监控，确保每次互动合乎规范，平台安心运营。</div>
         <div class="feature-tags">
@@ -636,7 +645,7 @@
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon blue">🎁</div>
+        <div class="feature-icon blue"><i class="fa-solid fa-gift"></i></div>
         <div class="feature-title">互动整合机制</div>
         <div class="feature-desc">礼物打赏、幸运转盘、聊天室弹幕，让玩家有付出时间成本的黏着感，大幅增加停留时间与复访频率。</div>
         <div class="feature-tags">
@@ -645,7 +654,7 @@
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon red">📊</div>
+        <div class="feature-icon red"><i class="fa-solid fa-chart-bar"></i></div>
         <div class="feature-title">数据分析报表</div>
         <div class="feature-desc">整合开播、打赏与带单指标——观看人数/时长、发言人数、主播赛事表现报表，精准优化运营策略。</div>
         <div class="feature-tags">
@@ -654,7 +663,7 @@
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon gold">🌐</div>
+        <div class="feature-icon gold"><i class="fa-solid fa-globe"></i></div>
         <div class="feature-title">多语翻译 & 多市场</div>
         <div class="feature-desc">聊天室内建翻译功能，支持越南文、中文、泰国文、英文主播，一套系统覆盖东南亚全市场用户。</div>
         <div class="feature-tags">
@@ -663,7 +672,7 @@
       </div>
 
       <div class="feature-card">
-        <div class="feature-icon green">⚡</div>
+        <div class="feature-icon green"><i class="fa-solid fa-bolt"></i></div>
         <div class="feature-title">一键 iFrame 嵌入</div>
         <div class="feature-desc">呼叫 API 取得 Widget URL，以 iFrame 方式嵌入，高度融合任何网站。零技术门槛，快速上线，立即变现。</div>
         <div class="feature-tags">
@@ -694,7 +703,7 @@
     <!-- 5 feature strips -->
     <div style="display:flex;flex-direction:column;gap:16px;max-width:860px;margin:0 auto 80px;">
       <div class="pd-row">
-        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(168,85,247,0.25),rgba(124,58,237,0.15));">📺</div>
+        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(168,85,247,0.25),rgba(124,58,237,0.15));"><i class="fa-solid fa-tv"></i></div>
         <div class="pd-body">
           <div class="pd-title">即时直播</div>
           <div class="pd-desc">主播同步解说，一键开播画面管理，把比赛现场带进玩家眼前</div>
@@ -702,7 +711,7 @@
         <div class="pd-badge">LIVE</div>
       </div>
       <div class="pd-row">
-        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(14,165,233,0.1));">💬</div>
+        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(14,165,233,0.1));"><i class="fa-solid fa-comments"></i></div>
         <div class="pd-body">
           <div class="pd-title">聊天互动</div>
           <div class="pd-desc">赠礼与多语翻译，打赏与活动数据同步掌握，让每位玩家都是参与者</div>
@@ -710,7 +719,7 @@
         <div class="pd-badge" style="background:rgba(56,189,248,0.15);color:var(--blue);border-color:rgba(56,189,248,0.3);">CHAT</div>
       </div>
       <div class="pd-row">
-        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(168,85,247,0.2),rgba(56,189,248,0.1));">📊</div>
+        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(168,85,247,0.2),rgba(56,189,248,0.1));"><i class="fa-solid fa-chart-bar"></i></div>
         <div class="pd-body">
           <div class="pd-title">投注面板</div>
           <div class="pd-desc">赔率清晰，快速完成下注，观看时无需切换页面，转化路径缩短 80%</div>
@@ -718,7 +727,7 @@
         <div class="pd-badge">BET</div>
       </div>
       <div class="pd-row">
-        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(129,140,248,0.2),rgba(168,85,247,0.1));">🎮</div>
+        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(129,140,248,0.2),rgba(168,85,247,0.1));"><i class="fa-solid fa-gamepad"></i></div>
         <div class="pd-body">
           <div class="pd-title">直播玩法</div>
           <div class="pd-desc">支持多元直播下注模式，幸运转盘、礼物打赏，游戏化体验留客更久</div>
@@ -726,7 +735,7 @@
         <div class="pd-badge" style="background:rgba(129,140,248,0.15);color:var(--accent);border-color:rgba(129,140,248,0.3);">PLAY</div>
       </div>
       <div class="pd-row">
-        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(168,85,247,0.1));">📈</div>
+        <div class="pd-icon" style="background:linear-gradient(135deg,rgba(56,189,248,0.2),rgba(168,85,247,0.1));"><i class="fa-solid fa-chart-line"></i></div>
         <div class="pd-body">
           <div class="pd-title">数据分析</div>
           <div class="pd-desc">整合开播、打赏与带单指标，快速掌握表现，精准优化运营策略</div>
@@ -848,19 +857,19 @@
     <div class="cs-grid">
       <div class="cs-card">
         <div class="cs-label">
-          <div class="cs-ico">📡</div>
+          <div class="cs-ico"><i class="fa-solid fa-satellite-dish"></i></div>
           <div class="cs-label-title">跑马灯显示<br>推广信息</div>
         </div>
       </div>
       <div class="cs-card">
         <div class="cs-label">
-          <div class="cs-ico">📢</div>
+          <div class="cs-ico"><i class="fa-solid fa-bullhorn"></i></div>
           <div class="cs-label-title">平台营销<br>支持服务</div>
         </div>
       </div>
       <div class="cs-card">
         <div class="cs-label">
-          <div class="cs-ico">✨</div>
+          <div class="cs-ico"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
           <div class="cs-label-title">画面特效制作</div>
         </div>
       </div>
@@ -871,19 +880,19 @@
     <div class="cs-grid">
       <div class="cs-card">
         <div class="cs-label">
-          <div class="cs-ico">👕</div>
+          <div class="cs-ico"><i class="fa-solid fa-shirt"></i></div>
           <div class="cs-label-title">曝光客户<br>品牌服装</div>
         </div>
       </div>
       <div class="cs-card">
         <div class="cs-label">
-          <div class="cs-ico">🎁</div>
+          <div class="cs-ico"><i class="fa-solid fa-gift"></i></div>
           <div class="cs-label-title">保温杯<br>摆饰品</div>
         </div>
       </div>
       <div class="cs-card">
         <div class="cs-label">
-          <div class="cs-ico">🎪</div>
+          <div class="cs-ico"><i class="fa-solid fa-star"></i></div>
           <div class="cs-label-title">主播营销<br>平台活动</div>
         </div>
       </div>
@@ -981,22 +990,22 @@
     </div>
 
     <div class="sports-icons">
-      <div class="sport-chip"><div class="ico">⚽</div><div class="name">足球</div></div>
-      <div class="sport-chip"><div class="ico">🏀</div><div class="name">篮球</div></div>
-      <div class="sport-chip"><div class="ico">🎮</div><div class="name">电子竞技</div></div>
-      <div class="sport-chip"><div class="ico">🏒</div><div class="name">曲棍球</div></div>
-      <div class="sport-chip"><div class="ico">🏏</div><div class="name">板球</div></div>
-      <div class="sport-chip"><div class="ico">🏈</div><div class="name">美式足球</div></div>
-      <div class="sport-chip"><div class="ico">🎾</div><div class="name">网球</div></div>
-      <div class="sport-chip"><div class="ico">🥊</div><div class="name">综合格斗</div></div>
-      <div class="sport-chip"><div class="ico">🏸</div><div class="name">羽毛球</div></div>
-      <div class="sport-chip"><div class="ico">⚾</div><div class="name">棒球</div></div>
-      <div class="sport-chip"><div class="ico">⛳</div><div class="name">高尔夫</div></div>
-      <div class="sport-chip"><div class="ico">🎱</div><div class="name">斯诺克</div></div>
-      <div class="sport-chip"><div class="ico">🏐</div><div class="name">排球</div></div>
-      <div class="sport-chip"><div class="ico">🥊</div><div class="name">拳击</div></div>
-      <div class="sport-chip"><div class="ico">🛢️</div><div class="name">冰上曲棍球</div></div>
-      <div class="sport-chip"><div class="ico">🎱</div><div class="name">台球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-futbol"></i></div><div class="name">足球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-basketball"></i></div><div class="name">篮球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-gamepad"></i></div><div class="name">电子竞技</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-hockey-puck"></i></div><div class="name">曲棍球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-trophy"></i></div><div class="name">板球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-football"></i></div><div class="name">美式足球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-circle-dot"></i></div><div class="name">网球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-hand-fist"></i></div><div class="name">综合格斗</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-medal"></i></div><div class="name">羽毛球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-baseball"></i></div><div class="name">棒球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-golf-ball-tee"></i></div><div class="name">高尔夫</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-circle"></i></div><div class="name">斯诺克</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-volleyball"></i></div><div class="name">排球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-hand-fist"></i></div><div class="name">拳击</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-hockey-puck"></i></div><div class="name">冰上曲棍球</div></div>
+      <div class="sport-chip"><div class="ico"><i class="fa-solid fa-circle-dot"></i></div><div class="name">台球</div></div>
     </div>
   </div>
 </section>
@@ -1010,22 +1019,22 @@
 
     <div class="lang-grid">
       <div class="lang-card">
-        <div class="lang-flag">🇻🇳</div>
+        <div class="lang-flag"><span class="flag-text">VN</span></div>
         <div class="lang-name">越南语主播</div>
         <div class="lang-price">体育主播 <strong>从 190 USD</strong>/场</div>
       </div>
       <div class="lang-card">
-        <div class="lang-flag">🇨🇳</div>
+        <div class="lang-flag"><span class="flag-text">CN</span></div>
         <div class="lang-name">中文主播</div>
         <div class="lang-price">体育主播 <strong>从 170 USD</strong>/场</div>
       </div>
       <div class="lang-card">
-        <div class="lang-flag">🇹🇭</div>
+        <div class="lang-flag"><span class="flag-text">TH</span></div>
         <div class="lang-name">泰语主播</div>
         <div class="lang-price">体育主播 <strong>从 140 USD</strong>/场</div>
       </div>
       <div class="lang-card">
-        <div class="lang-flag">🇬🇧</div>
+        <div class="lang-flag"><span class="flag-text">EN</span></div>
         <div class="lang-name">英语主播</div>
         <div class="lang-price">体育主播 <strong>从 190 USD</strong>/场</div>
       </div>
@@ -1084,14 +1093,14 @@
     <!-- World Cup Special Banner -->
     <div class="wc-banner">
       <div class="wc-left">
-        <div class="wc-tag">⚽ 2026 世界杯限时早鸟</div>
+        <div class="wc-tag"><i class="fa-solid fa-futbol"></i> 2026 世界杯限时早鸟</div>
         <div class="wc-title">世界杯精选方案</div>
         <div class="wc-sub">📅 6/11 - 6/27 小组赛任选 28 场 ＋ 🏆 6/28 - 7/19 淘汰赛全程 32 场<br>多语系主播可选：越南｜中文｜泰国（各语系须单独购买）</div>
       </div>
       <div class="wc-right">
         <div class="wc-price">$14,000</div>
         <div class="wc-unit">USD 起 / 方案总价</div>
-        <div class="wc-games">✓ 共 60 场 · 建置费减免</div>
+        <div class="wc-games"><i class="fa-solid fa-check"></i> 共 60 场 · 建置费减免</div>
         <a href="#cta" class="wc-btn">抢早鸟方案 →</a>
       </div>
     </div>
@@ -1161,23 +1170,23 @@
     <p class="cta-sub">现在联系 SABA 顾问，获取专属方案报价与主播试播安排</p>
 
     <div class="hero-btns">
-      <a href="mailto:contact@saba.com" class="btn-primary">📧 立即发送询价</a>
-      <a href="https://t.me/sabasports" class="btn-secondary">💬 Telegram 咨询</a>
+      <a href="mailto:contact@saba.com" class="btn-primary"><i class="fa-solid fa-envelope"></i> 立即发送询价</a>
+      <a href="https://t.me/sabasports" class="btn-secondary"><i class="fa-brands fa-telegram"></i> Telegram 咨询</a>
     </div>
 
     <div class="cta-contact">
       <div class="contact-item">
-        <div class="ico">📧</div>
+        <div class="ico"><i class="fa-solid fa-envelope"></i></div>
         <div class="label">Email</div>
         <div class="val">contact@saba.com</div>
       </div>
       <div class="contact-item">
-        <div class="ico">💬</div>
+        <div class="ico"><i class="fa-brands fa-telegram"></i></div>
         <div class="label">Telegram</div>
         <div class="val">@SABALive</div>
       </div>
       <div class="contact-item">
-        <div class="ico">⚽</div>
+        <div class="ico"><i class="fa-solid fa-futbol"></i></div>
         <div class="label">2026 世界杯方案</div>
         <div class="val">限量早鸟开放中</div>
       </div>
